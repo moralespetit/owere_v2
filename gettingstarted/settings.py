@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "hello",
+    "rest_framework",
+    "applications.api",
 ]
 
 MIDDLEWARE = [
@@ -95,8 +97,19 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": os.path.join(BASE_DIR, "db.sqlite3")
-    }
+    },
+    'heroku-potsgres': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd7ia8j5mgbmpsi',
+        'USER': 'ouquibmngsrags' ,
+        'PASSWORD':'a55e4ea178825b4652638e1fd1838f4cd803cd68bfdf8c188224742b3ee1e2cf',
+        'HOST': 'ec2-54-228-218-84.eu-west-1.compute.amazonaws.com',
+        'PORT': 5432,
+    },
+
 }
+
+DATABASES['default'] = DATABASES['heroku-potsgres']
 
 if "DATABASE_URL" in os.environ:
     # Configure Django for DATABASE_URL environment variable.
@@ -124,7 +137,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "es-ES"
 
 TIME_ZONE = "UTC"
 
