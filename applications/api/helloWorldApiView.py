@@ -1,9 +1,16 @@
-from rest_framework.generics import ListAPIView
+
+from rest_framework.views import APIView
+from rest_framework.generics import GenericAPIView
+from rest_framework.response import Response
 from .serializers import TestSerializer
 
 
-class HelloWorldApiView(ListAPIView):
-    serializer_class = TestSerializer
+class HelloWorldApiView(GenericAPIView):
+    #serializer_class = TestSerializer
 
-    def get_queryset(self):
-        return {"message": "Hello World!"}
+    @staticmethod
+    def get(request):
+        return Response({'some': 'data'})
+
+    #def get_queryset(self):
+    #    return {"message": "Hello World!"}
