@@ -4,11 +4,13 @@ from rest_framework.response import Response
 #from .serializers import TestSerializer
 
 
-class HelloWorldApiView(GenericAPIView):
+class helloWorldApiView(GenericAPIView):
     #serializer_class = TestSerializer
 
     @staticmethod
     def get(request):
+
+        print(" ------ helloWorldApiView.get ------ ")
         return Response({'text': 'Hello World!'})
 
     #def get_queryset(self):
