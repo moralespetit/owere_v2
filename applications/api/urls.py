@@ -1,6 +1,6 @@
 from django.urls import path
-#from applications.api import helloWorldApiView
+from applications.api.helloworld import helloWorldApiView
 
 urlpatterns = [
-    #path("api/helloWorld", helloWorldApiView.HelloWorldApiView.as_view()),
+    path("api/helloworld", helloWorldApiView.HelloWorldApiView.as_view()),
 ]

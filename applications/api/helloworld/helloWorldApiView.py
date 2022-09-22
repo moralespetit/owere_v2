@@ -9,7 +9,7 @@ class HelloWorldApiView(GenericAPIView):
 
     @staticmethod
     def get(request):
-        return Response({'some': 'data'})
+        return Response({'text': 'Hello World!'})
 
     #def get_queryset(self):
     #    return {"message": "Hello World!"}
