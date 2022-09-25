@@ -1,0 +1,15 @@
+// pujar al github
+ git add . ; git commit -m "<<TEXT MESSAGE>>" ; git push
+
+// encendre el server
+python manage.py runserver
+
+// fer una migraciio
+F:\Programas\Git\owere_v2
+python manage.py makemigrations
+python manage.py migrate
+
+// crear un super user per admin
+python manage.py createsuperuser
+amorales_superuser -> UnKdcs8wbE#WKP
+csanchez_superuser -> 6fryKy44DVU#n7
