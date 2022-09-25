@@ -22,6 +22,7 @@ urlpatterns = [
 
 ]
 
+'''
 from django.db import connections
 from django.db.utils import OperationalError
 conn = connections['heroku-potsgres']
@@ -36,3 +37,4 @@ else:
     reachable = True
 
 print(reachable)
+'''

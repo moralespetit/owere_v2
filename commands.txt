@@ -13,3 +13,5 @@ python manage.py migrate
 python manage.py createsuperuser
 amorales_superuser -> UnKdcs8wbE#WKP
 csanchez_superuser -> 6fryKy44DVU#n7
+
+# heroku
