@@ -27,4 +27,6 @@ class Migration(migrations.Migration):
                 'db_table': 'COMPANY',
             },
         ),
+        migrations.RunSQL("CREATE SEQUENCE IF NOT EXISTS SEQ_AUDIT_OID INCREMENT 1 START 1 ;"),
+
     ]
