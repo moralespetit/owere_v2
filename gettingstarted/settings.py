@@ -102,10 +102,10 @@ DATABASES = {
     },
     'heroku-potsgres': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dcoea1slc6kd79',
-        'USER': 'cxwzpomghdohyn' ,
-        'PASSWORD':'62ae0aaccbc3bb1aee6feb8e8e09f4f52aa26bbf9759760a6224448fb3068ee4',
-        'HOST': 'ec2-54-229-217-195.eu-west-1.compute.amazonaws.com',
+        'NAME': 'db4dluhlv7og4o',
+        'USER': 'shxnsxtrvohdmi' ,
+        'PASSWORD':'ac81bbd7b4ecf09b37b47d8905b0eb2153927ec95e0e0849563c535ba1776524',
+        'HOST': 'ec2-52-48-150-253.eu-west-1.compute.amazonaws.com',
         'PORT': 5432,
     },
 

@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
                 ('notes', models.TextField(blank=True, null=True, verbose_name='notes')),
                 ('active', models.BooleanField(default=True, verbose_name='active')),
                 ('oidAudit', models.BigIntegerField(default=applications.model.genericModel.getSequenceAuditOid, editable=False, verbose_name='oidAudit')),
-                ('company', models.ForeignKey(on_delete=django.db.models.deletion.RESTRICT, to='applications.company')),
+                ('company', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='applications.company')),
             ],
             options={
                 'verbose_name': 'Cliente',
