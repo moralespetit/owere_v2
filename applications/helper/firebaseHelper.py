@@ -18,7 +18,7 @@ class FirebaseHelper (object):
     cred = credentials.Certificate("F:\\Programas\\Git\\owere_v2\\applications\\helper\\serviceAccountKey.json")
     app_instance = firebase_admin.initialize_app(credential=cred)
 
-    FIREBASE_WEB_API_KEY = "AIzaSyB4Pu1hVKQnNTD8rwdxDBavDgMM_T5aV3s"
+    FIREBASE_WEB_API_KEY = ""
     rest_api_url = f"https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword"
 
 
